@@ -4,7 +4,7 @@ function ProductCard({ producto, agregarAlCarrito }) {
       <img className="Foto" src={producto.imagen} alt={producto.nombre} />
       <h2>{producto.nombre}</h2>
       <p>Precio: ${producto.precio}</p>
-      <button onClick={() => agregarAlCarrito(producto)}>
+      <button className="boton" onClick={() => agregarAlCarrito(producto)}>
         Agregar al carrito
       </button>
     </div>
